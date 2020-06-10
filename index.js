@@ -173,9 +173,7 @@ and should return the average number of words per item in the array.
 For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
 
 function getAverageWordLength(arr){
-let joinedStr = arr.join(' ');
-let newArr = joinedStr.split(' ');
-return Math.round(newArr.length / arr.length);
+return Math.round(arr.join(' ').split(' ').length / arr.length);
 }
 
 
