@@ -258,8 +258,12 @@ var regionalFlavors = ["Pink Bubblegum",
     "Chocolate Chocolate Chip Cheesecake",
     "Caramel 'n' Cookies"]
 
-function getRandomFlavors(/*code here*/){
-
-    /*code here*/
-
+function getRandomFlavors(arr1, arr2, arr3, arr4, howManyFlavors){
+let totalArr = arr1.concat(arr2, arr3, arr4);
+let randomFlavors = [];
+    
+    for (let i = 0; i < howManyFlavors; i++) {
+        randomFlavors.push(totalArr[Math.floor(Math.random()*howManyFlavors)]);
+    }
+return randomFlavors
 }
