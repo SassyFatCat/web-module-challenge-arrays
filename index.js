@@ -260,16 +260,12 @@ var regionalFlavors = ["Pink Bubblegum",
 
 function getRandomFlavors(arr1, arr2, arr3, arr4, howManyFlavors){
 let totalArr = arr1.concat(arr2, arr3, arr4);
-// let flavorCount = totalArr.length;
 let randomFlavors = [];
-for (i)       
-let flavor = totalArr.splice(Math.floor(Math.random()*totalArr.length), 1);
-randomFlavors.push(flavor[0])
 
-
+    for (i = 0; i < howManyFlavors; i++) {     
+        let flavor = totalArr.splice(Math.floor(Math.random()*totalArr.length), 1);
+        randomFlavors.push(flavor[0]);
+}
 
 return randomFlavors;
 }
-
-
-// randomFlavors.push(totalArr[Math.floor(Math.random()*howManyFlavors)]);
